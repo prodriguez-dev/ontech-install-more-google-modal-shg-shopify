@@ -1,0 +1,213 @@
+/* Modal */
+
+.ont-in-mr-gl-modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: none;
+  overflow: scroll;
+}
+
+.ont-in-mr-gl-modal-overlay.open {
+  display: block;
+}
+
+.ont-in-mr-gl-modal {
+  margin: 10% auto;
+  max-width: 650px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(69, 69, 80, 0.15);
+  border-radius: 7px;
+  animation-name: ontInstMorGoogleAnim;
+  animation-duration: 1.25s;
+  padding: 20px;
+  font-family: "Proxima Nova Medium", Gotham, Montserrat, Trebuchet, sans-serif;
+  color: #454550;
+  font-weight: 500;
+}
+
+@keyframes ontInstMorGoogleAnim {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#ont-in-mr-gl-modal-close {
+  float: right;
+  z-index: 1000000000;
+}
+
+#ont-in-mr-gl-modal-close svg {
+  fill: #bfbfbf;
+}
+
+#ont-in-mr-gl-modal-close svg:hover {
+  fill: #979797;
+}
+
+#ont-in-mr-gl-modal-close:hover,
+#ont-in-mr-gl-modal-close:focus {
+  cursor: pointer;
+}
+
+/* Modal Content */
+
+.ont-in-mr-gl-modal-body {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.ont-in-mr-gl-modal-body h3, h4 {
+  font-family: "Proxima Nova Extrabld", Gotham, Montserrat, Trebuchet, sans-serif;
+  font-size: 16px;
+  color: #454550;
+  line-height: 1.25em;
+  letter-spacing: 0.125px;
+  text-align: left;
+  margin: 0;
+  font-weight: 700;
+  padding: 0 20px;
+}
+
+.ont-in-mr-gl-modal-body h3 {
+  padding: 48px 20px 32px;
+}
+
+.ont-in-mr-gl-modal-table {
+  margin-bottom: 15px;
+}
+
+.ont-in-mr-gl-modal-table-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.odd {
+  background-color: #f5f5f6 !important;
+}
+
+.ont-in-mr-gl-modal-table-col-2 p {
+  font-family: "Proxima Nova Extrabld", Gotham, Montserrat, Trebuchet,
+    sans-serif;
+  font-size: 17px;
+  color: #454550;
+  line-height: 1.25em;
+  letter-spacing: 0.125px;
+  text-align: right;
+  justify-content: right;
+  font-weight: 700;
+}
+
+.ont-in-mr-gl-modal-table-col-1 p {
+  font-size: 18px;
+  margin: 0;
+  text-align: left;
+}
+
+.ont-in-mr-gl-modal-table-col-1 .devices {
+  font-size: 12px;
+  margin: 0;
+}
+
+.ont-in-mr-gl-modal-table-col-2 .price-sup {
+  vertical-align: super;
+  font-size: 10px;
+  padding-left: 1px;
+}
+
+.ont-in-mr-gl-modal-body .disclaimer-sup {
+  vertical-align: super;
+  font-size: 10px;
+  padding-right: 1px;
+}
+
+
+.ont-in-mr-gl-modal-body p.disclaimer-1, .ont-in-mr-gl-modal-body p.disclaimer-2 {
+  font-size: 12px;
+  line-height: 1.2em;
+  padding: 0 21px;
+  text-align: left;
+}
+.ont-in-mr-gl-modal-body p.disclaimer-1:before, .ont-in-mr-gl-modal-body p.disclaimer-2:before  {
+  position: absolute;
+  left: 40px;
+  font-size: 10px;
+  margin-top: -4px;
+}
+.ont-in-mr-gl-modal-body p.disclaimer-1:before {
+  content: "1";
+}
+
+.ont-in-mr-gl-modal-body p.disclaimer-2:before {
+  content: "2";
+}
+
+.ont-modal-mem-z-up {
+  z-index: 99999;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+  .ont-modal-mem-content {
+    margin: 7% !important;
+    padding: 12px !important;
+  }
+  .ont-modal-mem-header h2 {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+  .ont-modal-mem-header h3 {
+    font-size: 20px !important;
+  }
+  .benefits-row {
+    padding: 0 !important;
+  }
+  .benefits-row h4 {
+    font-size: 15px !important;
+    padding: 0px 0 5px !important;
+  }
+  .benefits-row p {
+    font-size: 14px !important;
+  }
+  .benefits-column-1 {
+    margin: 16px 16px 0px 16px !important;
+  }
+  .benefits-column-2 {
+    margin: 0px 16px 16px 16px !important;
+  }
+}
+
+/* Click Icon  */
+
+.ont-in-mr-gl-launch-container {
+  width: 22px;
+  height: 22px;
+  border: 0;
+  margin: 0 auto;
+}
+
+#ont-in-mr-gl-launch-btn svg {
+  fill: #bfbfbf;
+  margin: 0;
+  padding: 0;
+}
+
+#ont-in-mr-gl-launch-btn svg:hover {
+  fill: #979797;
+}
+
+.ont-in-mr-gl-launch-container:hover {
+  cursor: pointer;
+}
